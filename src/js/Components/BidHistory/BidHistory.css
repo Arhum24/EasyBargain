@@ -1,0 +1,33 @@
+.BidHistory{
+    margin: 1rem 0;
+        border: 2px solid gray;
+}
+
+.BidHistory-columns{
+    display: flex;
+    border-bottom: 2px solid lightgray;
+    background-color: lightgreen;
+    color: #2c2e73;
+
+}
+
+.BidHistory__col{
+    margin:1rem 1rem;
+}
+
+.BidHistory-bid{
+    display: flex;
+}
+
+.bid__biddername{
+    margin:1rem 1rem;  
+}
+
+.bid__bidderprice{
+    margin:1rem 1rem;  
+}
+
+.BidHistory-rows{
+    display: flex;
+    flex-direction: column;
+}

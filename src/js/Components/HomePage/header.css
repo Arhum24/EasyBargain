@@ -1,0 +1,120 @@
+.top-bar{
+    background-color: rgba(117, 234, 231, 0.9);
+    padding-top: 1%;
+    width: inherit;
+    height: 3rem;    
+}
+
+.social-link{
+    height: 20%;
+}
+
+#login{
+ word-spacing: 2px;
+ background-color: whitesmoke;
+color: #11446D;
+padding: 0.25rem;
+margin-left: 0.5rem;
+border-radius: 0.5rem;
+
+}
+.register{
+    padding-left: 19rem;
+}
+#login:hover{
+  background-color:#075559;
+  color: whitesmoke;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(7, 4, 0, 0.19);
+
+}
+.mr-sm-2{
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(7, 4, 0, 0.19);
+    border-radius: 1rem;
+    width: 40rem;
+}
+.form-inline .form-control{
+    width: 18rem;
+
+}
+.searchbtn{
+    margin-left: 0.2rem;
+}
+.profileicon{
+    padding-top: 1.9rem;
+}
+#signup{
+    background-color: whitesmoke;
+    color: #11446D;    
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+
+}
+
+.navbar{
+    height: inherit;
+    
+}
+.navbar-2{
+    background-color: rgba(117, 234, 231, 0.4);
+}
+.mr-auto{
+    left: 10%;
+}
+.fbicon, .instaicon, .googleicon{
+    padding-bottom: 5rem;
+    height: 7rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #11446D;
+    font-size: 1.2rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    
+}
+.dropdown-item{
+    font-size: 1.2rem;
+}
+
+#signup:hover{
+    background-color: #075559;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+.cart-title{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: all .9s;
+    
+}
+
+.cart-title:hover {
+    color: #ffffff;
+    background-color:lightgreen;
+    }
+.cartimage{
+    height: 23%;
+    width: 13%;
+}
+
+.navlink:hover{
+    background-color: white;
+}
+
+.logo{
+    height: 100%;
+    width: 13rem;
+}
+
+.navbrand{
+    width: 30%;
+}
+.search{
+
+    left: 5%;
+}
+  
