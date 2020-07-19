@@ -67,7 +67,7 @@ function Livemain(props){
   let qwe;
 
       useEffect(()=>{
-        axios.get('http://localhost:3003/product/viewproduct/'+id)
+        axios.get('https://easybargain-node.herokuapp.com/product/viewproduct/'+id)
         .then(res=>{
           setpname(res.data.name);
           setdes(res.data.description);

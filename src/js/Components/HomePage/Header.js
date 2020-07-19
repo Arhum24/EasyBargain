@@ -72,9 +72,9 @@ return(
     </Col>
     <Col md={4} xs={6} className="register">
        
-<a id ="signup" href ="http://localhost:3000/SignUP">  Sign Up</a>
+<a id ="signup" href ="https://easybargain-node.herokuapp.com/SignUP">  Sign Up</a>
         
-        <a id ="login" href ="http://localhost:3000/LogIn" >Log In</a>
+        <a id ="login" href ="https://easybargain-node.herokuapp.com/LogIn" >Log In</a>
 
        
     </Col>

@@ -80,7 +80,7 @@ class Login extends React.Component {
       value:this.state.value
     }
     if(data.value==='Bidder'){
-      axios.post('http://localhost:3003/bidder/logincheck',{name:data.name,password:data.password})
+      axios.post('https://easybargain-node.herokuapp.com/bidder/logincheck',{name:data.name,password:data.password})
       .then(res=>{
         if(res.data!==null){
           console.log(res.data)
@@ -98,7 +98,7 @@ class Login extends React.Component {
       })
     }
     else{
-      // axios.get('http://localhost:3003/seller/authenticateuser/'+data.name)
+      // axios.get('https://easybargain-node.herokuapp.com/seller/authenticateuser/'+data.name)
       // .then(res=>{
       //   this.nextPath("./sellerdashboardhome?name="+res.data.name);
       // })
@@ -115,7 +115,7 @@ class Login extends React.Component {
       <Container component="main" maxWidth="xs" >
         <CssBaseline />
         <div>
-        <a href="http://localhost:3000"><CardMedia component="img" image={logo} /></a>
+        <a href="https://easybargain-node.herokuapp.com"><CardMedia component="img" image={logo} /></a>
          
        <h5> <strong>
            Log In
@@ -186,7 +186,7 @@ class Login extends React.Component {
             </Grid>
             <Grid container justify="flex-end">
               <Grid item>
-                <Link href="http://localhost:3000/signup" variant="body2">
+                <Link href="https://easybargain-node.herokuapp.com/signup" variant="body2">
                   Create New Account
                 </Link>
               </Grid>
@@ -208,7 +208,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="http://localhost:3000/">
+      <Link color="inherit" href="https://easybargain-node.herokuapp.com/">
         EasyBargain
       </Link>{' '}
       {new Date().getFullYear()}

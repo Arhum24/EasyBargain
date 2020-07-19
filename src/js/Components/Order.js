@@ -19,7 +19,7 @@ export default class Order extends Component {
         let prodName  = this.props.location.state.productName
 
 
-        axios.get("http://localhost:3003/product/view/"+ prodName).then((val)=>{
+        axios.get("https://easybargain-node.herokuapp.com/product/view/"+ prodName).then((val)=>{
             this.setState({product:val.data})
           
         })

@@ -130,7 +130,7 @@ export default class ProductCard extends React.Component {
 
         if(this.state.timeEnded){
           
-          axios.get("http://localhost:3003/product/view/"+this.props.title).then((res)=>{
+          axios.get("https://easybargain-node.herokuapp.com/product/view/"+this.props.title).then((res)=>{
 
                 let bidHistory =res.data.bidhistory;
                 console.log(bidHistory);
@@ -160,7 +160,7 @@ export default class ProductCard extends React.Component {
                                 prodName: this.props.title
                             }
 
-                            axios.get("http://localhost:3003/bidder/authenticateuser/"+winner.username).then((resp)=>{
+                            axios.get("https://easybargain-node.herokuapp.com/bidder/authenticateuser/"+winner.username).then((resp)=>{
                                 Winner = {
                                     name :winner.username,
                                     prodName: this.props.title,
@@ -171,7 +171,7 @@ export default class ProductCard extends React.Component {
 
                                 
 
-                            axios.post("http://localhost:3003/product/add/winner", Winner).then((res)=>{
+                            axios.post("https://easybargain-node.herokuapp.com/product/add/winner", Winner).then((res)=>{
                                 this.contract.methods.AddOrder(res.data["winner"]._id, res.data["winner"].name, res.data["winner"].prodName, res.data["winner"].email, res.data["winner"].price).send({ from: this.account }).then(function (result) {
                                     console.log(result);
                                     console.log("DONE");
@@ -236,7 +236,7 @@ export default class ProductCard extends React.Component {
         let tempArray = [];
         let HighestBid = 0;
 
-        await axios.get("http://localhost:3003/product/view/" + this.props.title).then((data) => {
+        await axios.get("https://easybargain-node.herokuapp.com/product/view/" + this.props.title).then((data) => {
             this.setState({ Bids: data.data });
         })
 
@@ -260,7 +260,7 @@ export default class ProductCard extends React.Component {
 
                 tempArray.push({ username: this.props.username, price: this.state.price })
                 // console.log(tempArray)
-                await axios.post("http://localhost:3003/product/updateproduct", { prodName: this.props.title, bidhistory: tempArray }).then((data) => {
+                await axios.post("https://easybargain-node.herokuapp.com/product/updateproduct", { prodName: this.props.title, bidhistory: tempArray }).then((data) => {
                     // console.log(this.state.Bids)
                     this.setState({ pricesubmitted: true })
                 })

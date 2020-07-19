@@ -84,7 +84,7 @@ function Addproducts(props){
       };
       console.log("To Send"+data);
       axios
-      .post('http://localhost:3003/product/', data)
+      .post('https://easybargain-node.herokuapp.com/product/', data)
       .then(res=>{
         console.log(res);
         console.log(res.data);

@@ -16,7 +16,7 @@ export default class BidHistory extends React.Component {
     }
 
   async  componentWillMount() {
-       await axios.get("http://localhost:3003/product/view/" + this.props.title).then((data) => {
+       await axios.get("https://easybargain-node.herokuapp.com/product/view/" + this.props.title).then((data) => {
             this.setState({ Bids: data.data.bidhistory });
             console.log(this.state.Bids)
         })
