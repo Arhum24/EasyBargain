@@ -25,7 +25,8 @@ var path = require('path');
 // }});
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
-var dbUrl = 'mongodb://localhost:27017/uploads';
+// var dbUrl = 'mongodb://localhost:27017/uploads';
+var dbUrl = 'mongodb+srv://EasyBargain:EasyBargain#123#@cluster0.j9jah.mongodb.net/EasyBargain?retryWrites=true&w=majority';
 var storage= multer.diskStorage({
     destination:"./public/uploads",
     filename:(req,file,cb)=>{
