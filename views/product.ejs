@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seller Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <div class="container">
+                <div class="jumbotron">
+                        <h2>Welcome Seller!</h2>
+                        <p> Now you can add your products</p>
+                        <br>
+                        <h3>Product Uploading Form</h3>
+                </div>
+
+
+<form method="POST" action="/product">
+Product Name:<br>
+<input type="text" name="name"> <br>
+
+Intial Price:<br>
+<input type="number" name="iprice"> <br>
+<!-- 
+Select a file: <input type="file" name="productimage"><br> -->
+
+Seller Name:<br>
+<input type="text" name="sname">
+<br>
+
+Description: <br>
+<input type="text" name="desc" ><br>
+
+Adress<br>
+<input type="text" name="ad">
+<br>
+<br>
+
+<input type="submit" value="Submit" > 
+
+</form>
+
+
+
+</body>
+</html>
