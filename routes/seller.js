@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 var router = express.Router();
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
-var dbUrl = 'mongodb://localhost:27017/seller';
+// var dbUrl = 'mongodb://localhost:27017/seller';
+var dbUrl = 'mongodb+srv://EasyBargain:EasyBargain#123#@cluster0.j9jah.mongodb.net/EasyBargain?retryWrites=true&w=majority';
 var sellerSchema = mongoose.Schema({
     name: String,
 password:String,
